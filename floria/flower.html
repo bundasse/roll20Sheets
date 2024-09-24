@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="flower.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container container_profile">
+        <input type="text" placeholder="이름">
+        <input type="text" placeholder="성별">
+        <input type="text" placeholder="나이">
+        <input type="text" placeholder="몸에 심은 마법식물">
+         <input type="text" placeholder="플레이어 이름">
+        생명점 <input type="number" name="" id="">
+      <div class="row">
+        종족
+        <select name="" id="">
+          <option value="1">인간</option>
+          <option value="2">수인</option>
+          <option value="3">정령</option>
+        </select>
+        라이프스타일
+        <select name="" id="">
+          <option value="1">크래프터</option>
+          <option value="2">트래블러</option>
+          <option value="3">가드너</option>
+        </select>
+        매직 스타일
+        <select name="" id="">
+          <option value="1">예리한 가시의 마법사-브랜치</option>
+          <option value="2">비호하는 잎의 마법사-리프-</option>
+          <option value="3">보살피는 꽃의 마법사-커롤러-</option>
+        </select>
+      </div>
+    </div>
+    <div class="container container_status">
+        <div>
+            <p>육체</p>
+            <select name="" id="">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <p>정신</p>
+            <select name="" id="">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <p>요령</p>
+            <select name="" id="">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <p>지혜</p>
+            <select name="" id="">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <p>조화</p>
+            <input type="number" name="" value="">
+        </div>
+        <div>
+            <p>소지한계</p>
+            <input type="number" name="" value="">
+        </div>
+        <div>
+            <p>활동성</p>
+            <input type="number" name="" value="">
+        </div>
+        <div>
+            <p>민첩성</p>
+            <input type="number" name="" value="" >
+        </div>
+    </div>
+    <div class="container container_skill">
+        <p>습득 스킬</p>
+      <div class="row">
+        <div class="box_skill">
+          <!-- 주사위굴림버튼 -->
+          <button>🎲</button>
+          <!-- 스킬명 -->
+          <input type="text" placeholder="스킬명">
+          <!-- 조건 -->
+          <input type="text" placeholder="사용조건">
+          <input type="text" placeholder="비고">
+            <!-- 스킬 효과 -->
+            <textarea name="" id="" placeholder="스킬 효과"></textarea>
+
+        </div>
+      </div>
+    </div>
+    <div class="container container_magic">
+
+        <p>습득 마법</p>
+        <div class="row">
+          <div class="box_skill">
+            <input type="checkbox" name="" id="chk_box_open1" class="chk_box_open"><label for="chk_box_open1">🌸</label>
+            <!-- 주사위굴림버튼 -->
+            <button>🎲</button>
+            <!-- 스킬명 -->
+            <input type="text" placeholder="스킬명">
+            <!-- 조건 -->
+            <input type="text" placeholder="코스트">
+            <input type="text" placeholder="진영">
+            <!-- 스킬 효과 -->
+             <div class="box_hidden">
+              <textarea name="" id="" placeholder="스킬 효과"></textarea>
+              <input type="text" class="width_full" placeholder="부가 설명">
+             </div>
+
+          </div>
+        </div>
+    </div>
+    <div class="container container_friends">
+
+
+    </div>
+  </div>
+</body>
+
+<script>
+    function boxOpen(className) {
+        let box = document.querySelector(className);
+        console.log(box);
+        box.classList.toggle('visible');
+    }
+</script>
+
+</html>
