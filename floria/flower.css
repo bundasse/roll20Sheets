@@ -57,6 +57,12 @@
     border-radius: 4px;
   }
 
+  .container_profile{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+  }
+
   .container_status{
     display: flex;
     justify-content: space-between;
