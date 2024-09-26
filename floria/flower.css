@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Noto Sans KR';
+    font-size: 1rem;
     letter-spacing: -0.2px;
   }
   /* 
@@ -67,6 +68,12 @@
     display: flex;
     justify-content: space-between;
     gap: 4px;
+  }
+  .container_status>div{
+    width: 10%;
+  }
+  .container_status input{
+    width:auto
   }
   .chk_box_open{
     width:0;
