@@ -31,6 +31,14 @@
     border: 1px solid #AACB73;
     background-color: #ffffffbe;
     border-radius: 4px;
+    outline: none;
+  }
+  input[type=number] {
+    padding: 4px;
+    border: 1px solid #AACB73;
+    background-color: #ffffffbe;
+    border-radius: 4px;
+    outline: none;
   }
   textarea{
     width:100%;
@@ -65,15 +73,37 @@
   }
 
   .container_status{
+    width:90%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .status_circle{
     display: flex;
-    justify-content: space-between;
-    gap: 4px;
+    flex-direction: column;
+    align-items: baseline;
+    width:140px;
+    height:140px;
+    background-image: url('circle.png');
+    background-size:cover;
   }
-  .container_status>div{
-    width: 10%;
+  .status_circle p{
+    display: inline-block;
+    border:1px solid black;
+    margin-top: 10px;
+    padding:2px 8px;
+    border-radius: 16px;
+    background-color: white;
   }
-  .container_status input{
-    width:auto
+  .status_circle input{
+    width: 100%;
+    background:none;
+    border:0;
+    padding: 0;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
   }
   .chk_box_open{
     width:0;
