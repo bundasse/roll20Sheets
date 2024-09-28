@@ -15,11 +15,15 @@
 #CDE990
 #AACB73
  */
+ :root{
+  --cus-border:#AACB73;
+  --cus-bg:#ffffffbe;
+ }
   .wrapper {
     width: 800px;
     padding: 20px;
-    border: 1px solid #AACB73;
-    background-color: #fff3e8;
+    border: 1px solid var(--cus-border);
+    background-color: #f5f2e1;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -28,30 +32,31 @@
   
   input[type=text] {
     padding: 4px;
-    border: 1px solid #AACB73;
-    background-color: #ffffffbe;
+    border: 1px solid var(--cus-border);
+    background-color: var(--cus-bg);
     border-radius: 4px;
+    width: 100%;
     outline: none;
   }
   input[type=number] {
     padding: 4px;
-    border: 1px solid #AACB73;
-    background-color: #ffffffbe;
+    border: 1px solid var(--cus-border);
+    background-color: var(--cus-bg);
     border-radius: 4px;
     outline: none;
   }
   textarea{
     width:100%;
-    border: 1px solid #AACB73;
+    border: 1px solid var(--cus-border);
     padding:4px;
-    background-color: #ffffffbe;
+    background-color: var(--cus-bg);
     border-radius: 4px;
   }
   .box_skill{
     padding:6px;
     border:1px solid #145829;
     border-radius: 8px;
-    background-color:#AACB73
+    background-color:var(--cus-border)
   }
   .box_hidden{
     margin-top: 0;
@@ -71,9 +76,32 @@
     flex-direction: column;
     gap:4px;
   }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col2{
+    flex-basis: 49.5%;
+  }
+  .col3{
+    flex-basis: 32.5%;
+  }
+  .col4{
+    flex-basis: 23.5%;
+  }
+
+  .container_profile select{
+    width: 100%;
+    border: 1px solid var(--cus-border);
+    background-color: var(--cus-bg);
+    border-radius: 4px;
+    outline: none;
+  }
 
   .container_status{
-    width:90%;
+    width:95%;
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
