@@ -72,6 +72,7 @@
   }
 
   .container_profile{
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
     gap:4px;
@@ -99,6 +100,44 @@
     border-radius: 4px;
     outline: none;
   }
+  .container_profile .container_hp{
+    display: flex;
+    gap:12px;
+  }
+  .hp_bar{
+    margin-right: 8px;
+  }
+  .hp_check_box{
+    display: none;
+  }
+  .hp_check_box+label {
+    position: relative;
+    width: 30px;
+    height: 27px;
+    background: none !important;
+  }
+.hp_check_box+label:before,
+.hp_check_box+label:after {
+    position: absolute;
+    content: "";
+    left: 15px;
+    top: 0;
+    width: 15px;
+    height: 24px;
+    background: #96a388;
+    border-radius: 15px 15px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+.hp_check_box+label:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  .hp_check_box:checked+label:before,
+  .hp_check_box:checked+label:after {
+      background: #ff838c;
+    }
 
   .container_status{
     width:95%;
