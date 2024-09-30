@@ -10,18 +10,48 @@
 
 <body>
   <div class="wrapper">
-    <div class="container container_profile">
-        <input type="text" placeholder="이름">
-        <input type="text" placeholder="플레이어 이름">
-        <div class="row">
-          <div class="col2">
-            <input type="text" placeholder="성별">
+    <div class="row">
+      <div style="width:20%; text-align: center;">
+        <img src="./title.png" width="100%">
+      </div>
+      <div class="container container_profile">
+          <input type="text" placeholder="이름">
+          <input type="text" placeholder="플레이어 이름">
+          <div class="row">
+            <div class="col2">
+              <input type="text" placeholder="성별">
+            </div>
+            <div class="col2">
+              <input type="text" placeholder="나이">
+            </div>
           </div>
-          <div class="col2">
-            <input type="text" placeholder="나이">
-          </div>
+          <input type="text" placeholder="몸에 심은 마법식물">
+          <div class="row">
+            <div class="col4">
+              <label for="attr_species">종족</label>
+              <select name="" id="attr_species">
+                <option value="1">인간</option>
+                <option value="2">수인</option>
+                <option value="3">정령</option>
+              </select>
+            </div>
+            <div class="col4">
+              <label for="attr_lifestyle">라이프스타일</label>
+              <select name="" id="attr_lifestyle">
+                <option value="1">크래프터</option>
+                <option value="2">트래블러</option>
+                <option value="3">가드너</option>
+              </select>
+            </div>
+            <div class="col2">
+              <label for="attr_magicstyle">매직 스타일</label>
+              <select name="" id="attr_magicstyle">
+                <option value="1">예리한 가시의 마법사-브랜치</option>
+                <option value="2">비호하는 잎의 마법사-리프-</option>
+                <option value="3">보살피는 꽃의 마법사-커롤러-</option>
+              </select>
+            </div>
         </div>
-        <input type="text" placeholder="몸에 심은 마법식물">
         <div class="container_hp">
           <p>
             생명점
@@ -52,31 +82,6 @@
             </div>
            </div>
         </div>
-        <div class="row">
-          <div class="col4">
-            <label for="attr_species">종족</label>
-            <select name="" id="attr_species">
-              <option value="1">인간</option>
-              <option value="2">수인</option>
-              <option value="3">정령</option>
-            </select>
-          </div>
-          <div class="col4">
-            <label for="attr_lifestyle">라이프스타일</label>
-            <select name="" id="attr_lifestyle">
-              <option value="1">크래프터</option>
-              <option value="2">트래블러</option>
-              <option value="3">가드너</option>
-            </select>
-          </div>
-          <div class="col2">
-            <label for="attr_magicstyle">매직 스타일</label>
-            <select name="" id="attr_magicstyle">
-              <option value="1">예리한 가시의 마법사-브랜치</option>
-              <option value="2">비호하는 잎의 마법사-리프-</option>
-              <option value="3">보살피는 꽃의 마법사-커롤러-</option>
-            </select>
-          </div>
       </div>
     </div>
     <div class="container container_status">
