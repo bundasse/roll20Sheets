@@ -21,9 +21,9 @@
  }
   .wrapper {
     width: 800px;
-    padding: 20px;
+    padding: 10px 20px;
     border: 1px solid var(--cus-border);
-    background-color: #f5f2e1;
+    background-color: #f2f0e5;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -70,10 +70,26 @@
     padding: 2px 6px;
     border-radius: 4px;
   }
+  .border {
+    border-top: 4px double #8c8b8b;
+    margin: 8px 0;
+    text-align: center;
+  }
+  .border:after {
+    content: '\002665';
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+  }
 
   .container_profile{
     display: flex;
     flex-direction: column;
+    padding-top: 12px;
     gap:4px;
   }
   .row{
@@ -101,31 +117,32 @@
   }
   .container_profile .container_hp{
     display: flex;
-    gap:12px;
-    margin-top: 8px;
+    justify-content: space-between;
+    margin-top: 4px;
   }
   .hp_bar{
-    margin-right: 8px;
+    margin-right: 4px;
   }
   .hp_check_box{
     display: none;
   }
   .hp_check_box+label {
     position: relative;
-    width: 30px;
-    height: 27px;
+    width: 12px;
+    height: 12px;
+    margin: 0;
     background: none !important;
   }
 .hp_check_box+label:before,
 .hp_check_box+label:after {
     position: absolute;
     content: "";
-    left: 15px;
-    top: 0;
-    width: 15px;
-    height: 24px;
+    left: 10px;
+    top: 8px;
+    width: 10px;
+    height: 16px;
     background: #96a388;
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
   }
@@ -140,7 +157,7 @@
     }
 
   .container_status{
-    width:95%;
+    width:92%;
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
