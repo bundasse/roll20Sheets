@@ -206,7 +206,7 @@
     background-color: #ffffff;
   }
   input[type=checkbox]:checked~.box_hidden{
-    margin-top: 8px;
+    margin-top: 6px;
     height: auto;
     visibility: visible;
   }
