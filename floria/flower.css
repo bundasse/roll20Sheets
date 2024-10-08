@@ -214,3 +214,8 @@
   .width_full{
     width: 100%;
   }
+
+  .namebar_skill{
+    display: flex;
+    gap:8px;
+  }
