@@ -16,7 +16,7 @@
 #AACB73
  */
  :root{
-  --cus-border:#AACB73;
+  --cus-border:#889e63;
   --cus-bg:#ffffffbe;
  }
   .wrapper {
@@ -54,9 +54,12 @@
   }
   .box_skill{
     padding:6px;
-    border:1px solid #145829;
+    border: 1px solid #145829;
     border-radius: 8px;
-    background-color:#96a388;
+    background-color: #b7c2b1;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
   }
   .box_hidden{
     margin-top: 0;
@@ -81,7 +84,7 @@
     position: relative;
     top: -15px;
     padding: 0 10px;
-    background: #f0f0f0;
+    background: #f9f7ea;
     color: #8c8b8b;
     font-size: 18px;
   }
@@ -123,38 +126,6 @@
   .hp_bar{
     margin-right: 4px;
   }
-  .hp_check_box{
-    display: none;
-  }
-  .hp_check_box+label {
-    position: relative;
-    width: 12px;
-    height: 12px;
-    margin: 0;
-    background: none !important;
-  }
-.hp_check_box+label:before,
-.hp_check_box+label:after {
-    position: absolute;
-    content: "";
-    left: 10px;
-    top: 8px;
-    width: 10px;
-    height: 16px;
-    background: #96a388;
-    border-radius: 10px 10px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-  }
-.hp_check_box+label:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-  }
-  .hp_check_box:checked+label:before,
-  .hp_check_box:checked+label:after {
-      background: #ff838c;
-    }
 
   .container_status{
     width:92%;
@@ -217,5 +188,5 @@
 
   .namebar_skill{
     display: flex;
-    gap:8px;
+    gap:4px;
   }
