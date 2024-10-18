@@ -123,7 +123,7 @@
     </div>
     <div class="border"></div>
     <div class="container container_skill">
-        <p>습득 스킬</p>
+        <p class="container_title">습득 스킬</p>
         <div class="box_skill">
           <div class="namebar_skill">
             <!-- 주사위굴림버튼 -->
@@ -139,7 +139,7 @@
         </div>
     </div>
     <div class="container container_magic">
-        <p>습득 마법</p>
+        <p class="container_title">습득 마법</p>
           <div class="box_skill">
             <div class="namebar_skill">
               <input type="checkbox" name="" id="chk_box_open1" class="chk_box_open"><label for="chk_box_open1">🌸</label>
@@ -154,22 +154,38 @@
             <!-- 스킬 효과 -->
               <textarea name="" id="" placeholder="스킬 효과"></textarea>
               <input type="text" class="width_full" placeholder="부가 설명">
-
-
           </div>
     </div>
     <div class="row">
       <div class="container container_friends">
+        <p class="container_title">친밀도</p>
         <div class="box_friends">
-          <input type="checkbox" name="attr_friend_use_01" id="">
-          <input type="text" name="attr_friend_name_01">
-          <input type="number" name="attr_friend_point_01">
+          <div class="row_friends">
+            <p></p>
+            <p>이름</p>
+            <p>친밀도</p>
+          </div>
+          <div class="row_friends">
+            <div>
+              <input type="checkbox" name="attr_friend_use_01" id="">
+            </div>
+            <input type="text" name="attr_friend_name_01">
+            <input type="number" name="attr_friend_point_01">
+          </div>
         </div>
       </div>
-      <div class="container container_inventory">   
+      <div class="container container_inventory">
+        <p class="container_title">소지품</p>   
         <div class="box_inventory">
-          <input type="number" name="attr_inventory_rare_01" id="">
-          <input type="text" name="attr_inventory_name_01">
+          <div class="row_inventory">
+            <p>이름</p>
+            <p>레어도</p>
+          </div>
+          <div class="row_inventory">
+
+            <input type="text" name="attr_inventory_name_01">
+            <input type="number" name="attr_inventory_rare_01" id="">
+          </div>
         </div>
       </div>
     </div>
