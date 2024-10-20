@@ -203,7 +203,9 @@
 }
   .box_friends{
     padding: 6px;
+    display: flex;
     flex-direction: column;
+    gap:4px;
       border: 1px solid #145829;
   border-radius: 8px;
   background-color: #b7c2b1;
