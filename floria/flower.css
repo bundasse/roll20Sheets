@@ -52,8 +52,19 @@
     background-color: var(--cus-bg);
     border-radius: 4px;
   }
+
+  .container_skill{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+  }
+  .container_magic{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+  }
   .box_skill{
-    padding:6px;
+    padding:2px 4px;
     border: 1px solid #145829;
     border-radius: 8px;
     background-color: #b7c2b1;
@@ -63,8 +74,9 @@
   }
   .box_hidden{
     margin-top: 0;
-    height: 0;
-    visibility: hidden;
+    display: none;
+    /* height: 0;
+    visibility: hidden; */
   }
   .visible{
     display: block !important;
@@ -164,6 +176,7 @@
     font-weight: bold;
     text-align: center;
   }
+
   .chk_box_open{
     width:0;
     height: 0;
