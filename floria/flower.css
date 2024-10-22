@@ -9,6 +9,12 @@
     font-size: 1rem;
     letter-spacing: -0.2px;
   }
+  @font-face {
+    font-family: 'GabiaMaeumgyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GabiaMaeumgyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
   /* 
   #FFD4D4
 #FFFFE8
@@ -87,7 +93,7 @@
   }
   .border {
     border-top: 4px double #8c8b8b;
-    margin: 8px 0;
+    margin: 16px 0 4px;
     text-align: center;
   }
   .border:after {
@@ -102,7 +108,9 @@
   }
   .container_title{
     margin: 6px 0;
-    
+    font-family: 'GabiaMaeumgyeol';
+    font-size: 1.6rem;
+    font-weight:bold;
   }
 
   .container_profile{
@@ -184,14 +192,18 @@
 
   input[type=checkbox]+label{
     display: inline-block;
-    width:24px;
-    height:24px;
+    margin-top:1px;
+    width:28px;
+    height:28px;
+    padding: 2px 6px;
     border-radius: 4px;
-    background-color: #b72a77;
+    background-color: #667c48;
+    border:1px solid #667c48;
   }
 
   input[type=checkbox]:checked+label{
-    background-color: #ffffff;
+    background-color: #ff6738;
+    border:1px solid #d66d4e;
   }
   input[type=checkbox]:checked~.box_hidden{
     margin-top: 6px;

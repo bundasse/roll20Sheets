@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="flower.css">
+  <script src="https://kit.fontawesome.com/756ddea003.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,46 +14,46 @@
     <div class="row">
       <div style="width:24%; text-align: center; padding:0 8px;">
         <img src="./title.png" width="100%">
+        <!-- 타이틀이미지 폰트:가비아 마음결체 -->
       </div>
       <div class="container container_profile">
-          <input type="text" name="attr_name" placeholder="이름">
-          <input type="text" name="attr_player" placeholder="플레이어 이름">
-          <div class="row">
-            <div class="col2">
-              <input type="text" name="attr_gender" placeholder="성별">
-            </div>
-            <div class="col2">
-              <input type="text" name="attr_age" placeholder="나이">
-            </div>
+        <input type="text" name="attr_name" placeholder="이름">
+        <input type="text" name="attr_player" placeholder="플레이어 이름">
+        <div class="row">
+          <div class="col2">
+            <input type="text" name="attr_gender" placeholder="성별">
           </div>
-          <input type="text" name="attr_plant" placeholder="몸에 심은 마법식물">
-          <div class="row">
-            <div class="col4">
-              <label for="attr_species">종족</label>
-              <select name="attr_species" id="attr_species">
-                <option value="1">인간</option>
-                <option value="2">수인</option>
-                <option value="3">정령</option>
-              </select>
-            </div>
-            <div class="col4">
-              <label for="attr_lifestyle">라이프스타일</label>
-              <select name="attr_lifestyle" id="attr_lifestyle">
-                <option value="1">크래프터</option>
-                <option value="2">트래블러</option>
-                <option value="3">가드너</option>
-              </select>
-            </div>
-            <div class="col2">
-              <label for="attr_magicstyle">매직 스타일</label>
-              <select name="attr_magicstyle" id="attr_magicstyle">
-                <option value="1">예리한 가시의 마법사-브랜치</option>
-                <option value="2">비호하는 잎의 마법사-리프-</option>
-                <option value="3">보살피는 꽃의 마법사-커롤러-</option>
-              </select>
-            </div>
+          <div class="col2">
+            <input type="text" name="attr_age" placeholder="나이">
           </div>
-          <input type="number" name="attr_hp" placeholder="생명점">
+        </div>
+        <input type="text" name="attr_plant" placeholder="몸에 심은 마법식물">
+        <div class="row">
+          <div class="col4">
+            <label for="attr_species">종족</label>
+            <select name="attr_species" id="attr_species">
+              <option value="1">인간</option>
+              <option value="2">수인</option>
+              <option value="3">정령</option>
+            </select>
+          </div>
+          <div class="col4">
+            <label for="attr_lifestyle">라이프스타일</label>
+            <select name="attr_lifestyle" id="attr_lifestyle">
+              <option value="1">크래프터</option>
+              <option value="2">트래블러</option>
+              <option value="3">가드너</option>
+            </select>
+          </div>
+          <div class="col2">
+            <label for="attr_magicstyle">매직 스타일</label>
+            <select name="attr_magicstyle" id="attr_magicstyle">
+              <option value="1">예리한 가시의 마법사-브랜치</option>
+              <option value="2">비호하는 잎의 마법사-리프-</option>
+              <option value="3">보살피는 꽃의 마법사-커롤러-</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
     <div class="border"></div>
@@ -78,16 +79,16 @@
             <input type="text" name="attr_status_harmony" value="0">
         </div>
         <div class="status_circle">
-            <p>소지한계</p>
-            <input type="text" name="attr_status_inventory" value="0">
+          <p>활동성</p>
+          <input type="text" name="attr_status_activity" value="0">
         </div>
         <div class="status_circle">
-            <p>활동성</p>
-            <input type="text" name="attr_status_activity" value="0">
+          <p>민첩성</p>
+          <input type="text" name="attr_status_agility" value="0" >
         </div>
         <div class="status_circle">
-            <p>민첩성</p>
-            <input type="text" name="attr_status_agility" value="0" >
+            <p>생명점</p>
+            <input type="text" name="attr_status_hp" value="10">
         </div>
     </div>
     <div class="border"></div>
@@ -96,7 +97,9 @@
         <div class="box_skill">
           <div class="namebar_skill">
             <!-- 주사위굴림버튼 -->
-            <input type="checkbox" name="" id="chk_box_skill_open_01" class="chk_box_open" onClick="boxOpen(0)"><label for="chk_box_skill_open_01">🌸</label>
+            <input type="checkbox" name="" id="chk_box_skill_open_01" class="chk_box_open" onClick="boxOpen(0)"><label for="chk_box_skill_open_01">
+              <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+            </label>
             <button>🎲</button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_01" placeholder="스킬명" class="col2">
@@ -112,7 +115,9 @@
         <div class="box_skill">
           <div class="namebar_skill">
             <!-- 주사위굴림버튼 -->
-            <input type="checkbox" name="" id="chk_box_skill_open_02" class="chk_box_open" onClick="boxOpen(1)"><label for="chk_box_skill_open_02">🌸</label>
+            <input type="checkbox" name="" id="chk_box_skill_open_02" class="chk_box_open" onClick="boxOpen(1)"><label for="chk_box_skill_open_02">
+              <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+            </label>
             <button>🎲</button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_02" placeholder="스킬명" class="col2">
@@ -128,7 +133,9 @@
         <div class="box_skill">
           <div class="namebar_skill">
             <!-- 주사위굴림버튼 -->
-            <input type="checkbox" name="" id="chk_box_skill_open_03" class="chk_box_open" onClick="boxOpen(2)"><label for="chk_box_skill_open_03">🌸</label>
+            <input type="checkbox" name="" id="chk_box_skill_open_03" class="chk_box_open" onClick="boxOpen(2)"><label for="chk_box_skill_open_03">
+              <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+            </label>
             <button>🎲</button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_03" placeholder="스킬명" class="col2">
@@ -144,7 +151,9 @@
         <div class="box_skill">
           <div class="namebar_skill">
             <!-- 주사위굴림버튼 -->
-            <input type="checkbox" name="" id="chk_box_skill_open_04" class="chk_box_open" onClick="boxOpen(3)"><label for="chk_box_skill_open_04">🌸</label>
+            <input type="checkbox" name="" id="chk_box_skill_open_04" class="chk_box_open" onClick="boxOpen(3)"><label for="chk_box_skill_open_04">
+              <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+            </label>
             <button>🎲</button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_04" placeholder="스킬명" class="col2">
@@ -162,7 +171,9 @@
         <p class="container_title">습득 마법</p>
           <div class="box_skill">
             <div class="namebar_skill">
-              <input type="checkbox" name="" id="chk_box_open_01" class="chk_box_open" onClick="boxOpen(4)"><label for="chk_box_open_01">🌸</label>
+              <input type="checkbox" name="" id="chk_box_open_01" class="chk_box_open" onClick="boxOpen(4)"><label for="chk_box_open_01">
+                <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+              </label>
               <!-- 주사위굴림버튼 -->
               <button>🎲</button>
               <!-- 스킬명 -->
@@ -179,7 +190,9 @@
           </div>
           <div class="box_skill">
             <div class="namebar_skill">
-              <input type="checkbox" name="" id="chk_box_open_01" class="chk_box_open" onClick="boxOpen(5)"><label for="chk_box_open_02">🌸</label>
+              <input type="checkbox" name="" id="chk_box_open_02" class="chk_box_open" onClick="boxOpen(5)"><label for="chk_box_open_02">
+                <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+              </label>
               <!-- 주사위굴림버튼 -->
               <button>🎲</button>
               <!-- 스킬명 -->
@@ -196,7 +209,9 @@
           </div>
           <div class="box_skill">
             <div class="namebar_skill">
-              <input type="checkbox" name="" id="chk_box_open_01" class="chk_box_open" onClick="boxOpen(6)"><label for="chk_box_open_03">🌸</label>
+              <input type="checkbox" name="" id="chk_box_open_03" class="chk_box_open" onClick="boxOpen(6)"><label for="chk_box_open_03">
+                <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+              </label>
               <!-- 주사위굴림버튼 -->
               <button>🎲</button>
               <!-- 스킬명 -->
@@ -213,7 +228,9 @@
           </div>
           <div class="box_skill">
             <div class="namebar_skill">
-              <input type="checkbox" name="" id="chk_box_open_01" class="chk_box_open" onClick="boxOpen(7)"><label for="chk_box_open_04">🌸</label>
+              <input type="checkbox" name="" id="chk_box_open_04" class="chk_box_open" onClick="boxOpen(7)"><label for="chk_box_open_04">
+                <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+              </label>
               <!-- 주사위굴림버튼 -->
               <button>🎲</button>
               <!-- 스킬명 -->
@@ -230,7 +247,9 @@
           </div>
           <div class="box_skill">
             <div class="namebar_skill">
-              <input type="checkbox" name="" id="chk_box_open_01" class="chk_box_open" onClick="boxOpen(8)"><label for="chk_box_open_05">🌸</label>
+              <input type="checkbox" name="" id="chk_box_open_05" class="chk_box_open" onClick="boxOpen(8)"><label for="chk_box_open_05">
+                <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
+              </label>
               <!-- 주사위굴림버튼 -->
               <button>🎲</button>
               <!-- 스킬명 -->
@@ -246,6 +265,7 @@
             </div>
           </div>
     </div>
+    <div class="border"></div>
     <div class="row">
       <div class="container container_friends">
         <p class="container_title">친밀도</p>
@@ -311,24 +331,16 @@
             <input type="text" name="attr_friend_name_08">
             <input type="number" name="attr_friend_point_08">
           </div>
-          <div class="row_friends">
-            <div>
-              <input type="checkbox" name="attr_friend_use_09" id="">
-            </div>
-            <input type="text" name="attr_friend_name_09">
-            <input type="number" name="attr_friend_point_09">
-          </div>
-          <div class="row_friends">
-            <div>
-              <input type="checkbox" name="attr_friend_use_10" id="">
-            </div>
-            <input type="text" name="attr_friend_name_10">
-            <input type="number" name="attr_friend_point_10">
-          </div>
         </div>
       </div>
       <div class="container container_inventory">
-        <p class="container_title">소지품</p>   
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <p class="container_title">소지품</p>
+          <div>
+            <label for="attr_status_inventory">소지한계</label>
+            <input type="text" name="attr_status_inventory" id="attr_status_inventory" value="0" style="width: 50px; margin-left: 6px;">
+          </div>
+        </div>
         <div class="box_inventory">
           <div class="row_inventory">
             <p>이름</p>
@@ -365,14 +377,6 @@
           <div class="row_inventory">
             <input type="text" name="attr_inventory_name_08">
             <input type="number" name="attr_inventory_rare_08" id="">
-          </div>
-          <div class="row_inventory">
-            <input type="text" name="attr_inventory_name_09">
-            <input type="number" name="attr_inventory_rare_09" id="">
-          </div>
-          <div class="row_inventory">
-            <input type="text" name="attr_inventory_name_10">
-            <input type="number" name="attr_inventory_rare_10" id="">
           </div>
         </div>
       </div>
