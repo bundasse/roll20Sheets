@@ -151,6 +151,13 @@
     margin-right: 4px;
   }
 
+  .container_rolldice{
+    width: 70%;
+    display: flex;
+    gap: 6px;
+    border:1px solid var(--cus-border);
+  }
+
   .container_status{
     width:92%;
     margin:0 auto;
