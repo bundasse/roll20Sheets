@@ -58,26 +58,26 @@
     </div>
     <div class="border"></div>
     <div class="container container_rolldice">
-      <select name="" id="">
+      <select name="attr_rolldice1">
         <option value="attr_status_phy">육체</option>
         <option value="attr_status_men">정신</option>
         <option value="attr_status_dex">요령</option>
         <option value="attr_status_wisdom">지혜</option>
       </select>
       <span> + </span>
-      <select name="" id="">
+      <select name="attr_rolldice2">
         <option value="attr_status_phy">육체</option>
         <option value="attr_status_men">정신</option>
         <option value="attr_status_dex">요령</option>
         <option value="attr_status_wisdom">지혜</option>
       </select>
       <span>수정치</span>
-      <select name="" id="">
+      <select name="attr_rollplusminus">
         <option value="0">+</option>
         <option value="1">-</option>
       </select>
-      <input type="text">
-      <button>🎲</button>
+      <input type="number" name="attr_rolladd">
+      <button type="roll"></button>
     </div>
     <div class="container container_status">
         <div class="status_circle">
@@ -122,7 +122,7 @@
             <input type="checkbox" name="" id="chk_box_skill_open_01" class="chk_box_open" onClick="boxOpen(0)"><label for="chk_box_skill_open_01">
               <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
             </label>
-            <button>🎲</button>
+            <button type="roll"></button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_01" placeholder="스킬명" class="col2">
             <!-- 조건 -->
@@ -140,7 +140,7 @@
             <input type="checkbox" name="" id="chk_box_skill_open_02" class="chk_box_open" onClick="boxOpen(1)"><label for="chk_box_skill_open_02">
               <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
             </label>
-            <button>🎲</button>
+            <button type="roll"></button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_02" placeholder="스킬명" class="col2">
             <!-- 조건 -->
@@ -158,7 +158,7 @@
             <input type="checkbox" name="" id="chk_box_skill_open_03" class="chk_box_open" onClick="boxOpen(2)"><label for="chk_box_skill_open_03">
               <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
             </label>
-            <button>🎲</button>
+            <button type="roll"></button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_03" placeholder="스킬명" class="col2">
             <!-- 조건 -->
@@ -176,7 +176,7 @@
             <input type="checkbox" name="" id="chk_box_skill_open_04" class="chk_box_open" onClick="boxOpen(3)"><label for="chk_box_skill_open_04">
               <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
             </label>
-            <button>🎲</button>
+            <button type="roll"></button>
             <!-- 스킬명 -->
             <input type="text" name="attr_skill_name_04" placeholder="스킬명" class="col2">
             <!-- 조건 -->
@@ -197,7 +197,7 @@
                 <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
               </label>
               <!-- 주사위굴림버튼 -->
-              <button>🎲</button>
+              <button type="roll"></button>
               <!-- 스킬명 -->
               <input type="text" name="attr_magic_name_01" placeholder="마법명">
               <!-- 조건 -->
@@ -216,7 +216,7 @@
                 <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
               </label>
               <!-- 주사위굴림버튼 -->
-              <button>🎲</button>
+              <button type="roll"></button>
               <!-- 스킬명 -->
               <input type="text" name="attr_magic_name_02" placeholder="마법명">
               <!-- 조건 -->
@@ -235,7 +235,7 @@
                 <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
               </label>
               <!-- 주사위굴림버튼 -->
-              <button>🎲</button>
+              <button type="roll"></button>
               <!-- 스킬명 -->
               <input type="text" name="attr_magic_name_03" placeholder="마법명">
               <!-- 조건 -->
@@ -254,7 +254,7 @@
                 <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
               </label>
               <!-- 주사위굴림버튼 -->
-              <button>🎲</button>
+              <button type="roll"></button>
               <!-- 스킬명 -->
               <input type="text" name="attr_magic_name_04" placeholder="마법명">
               <!-- 조건 -->
@@ -273,7 +273,7 @@
                 <i class="fa-solid fa-clover fa-rotate-by" style="color:white; --fa-rotate-angle:45deg;"></i>
               </label>
               <!-- 주사위굴림버튼 -->
-              <button>🎲</button>
+              <button type="roll"></button>
               <!-- 스킬명 -->
               <input type="text" name="attr_magic_name_05" placeholder="마법명">
               <!-- 조건 -->
@@ -404,6 +404,27 @@
       </div>
     </div>
   </div>
+
+  <!-- roll template -->
+  <rolltemplate class="sheet-rolltemplate-skills">
+    <div class="sheet-rolltemplate-container">
+      <div class="sheet-template-header">{{rollname}}</div>
+      {{#attack}}<div class="sheet-template-row">Attack: {{attack}} {{attackadvantage}} vs AC</div>{{/attack}}
+            {{#damage}}
+      <div class="sheet-template-row"><span>Damage: </span>{{damage}} 
+            <span>Crit: </span>{{dmgcrit}}</div>
+      <div class="sheet-template-row"><span>Type: </span>{{dmgtype}}</div>
+           {{/damage}}
+           {{#atteffect}}
+       <div class="sheet-template-row">
+       <span class="sheet-template-desc">Effect: </span>{{atteffect}}
+             </div>
+           {{/atteffect}}
+    </div>
+  </rolltemplate>
+  <rolltemplate class="sheet-rolltemplate-dices">
+
+  </rolltemplate>
 </body>
 
 <script>
