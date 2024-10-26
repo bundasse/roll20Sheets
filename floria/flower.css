@@ -119,22 +119,6 @@
     padding-top: 12px;
     gap:6px;
   }
-  .row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .col2{
-    flex-basis: 49.5%;
-  }
-  .col3{
-    flex-basis: 32.5%;
-  }
-  .col4{
-    flex-basis: 23.5%;
-  }
-
   .container_profile select{
     width: 100%;
     border: 1px solid var(--cus-border);
