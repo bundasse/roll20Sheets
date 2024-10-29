@@ -73,11 +73,11 @@
       </select>
       <span>수정치</span>
       <select name="attr_rollplusminus">
-        <option value="0">+</option>
-        <option value="1">-</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
       </select>
       <input type="number" name="attr_rolladd">
-      <button type="roll"></button>
+      <button type="roll" name="roll_dice" value="/roll (@{attr_rolldice1} + @{attr_rolldice2})d6 @{attr_rollplusminus} @{attr_rolladd}"></button>
     </div>
     <div class="container container_status">
         <div class="status_circle">
