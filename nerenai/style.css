@@ -1,3 +1,38 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
 
+#wrapper{
+    width: 600px;
+    padding: 20px 0;
+}
+.boxWrapper{
+    padding: 8px 16px;
+}
+.inputComp{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.inputLongComp{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.boxProfile{
+    display: flex;
+    flex-direction: column;
+}
+.boxHp{
+    width: 100%;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
 }
