@@ -81,3 +81,8 @@ textarea{
 .boxSkill>*:nth-child(6){
     width: 266px;
 }
+
+table,tr,td{
+    border: 1px solid black;
+    text-align: center;
+}
