@@ -25,7 +25,7 @@
   --cus-border:#889e63;
   --cus-bg:#ffffffbe;
  }
-  .wrapper {
+  .sheet-wrapper {
     width: 800px;
     padding: 10px 20px;
     border: 1px solid var(--cus-border);
@@ -59,17 +59,17 @@
     border-radius: 4px;
   }
 
-  .container_skill{
+  .sheet-container_skill{
     display: flex;
     flex-direction: column;
     gap:6px;
   }
-  .container_magic{
+  .sheet-container_magic{
     display: flex;
     flex-direction: column;
     gap:6px;
   }
-  .box_skill{
+  .sheet-box_skill{
     padding:2px 4px;
     border: 1px solid #145829;
     border-radius: 8px;
@@ -78,25 +78,25 @@
     flex-direction: column;
     gap:2px;
   }
-  .box_hidden{
+  .sheet-box_hidden{
     margin-top: 0;
     display: none;
     /* height: 0;
     visibility: hidden; */
   }
-  .visible{
+  .sheet-visible{
     display: block !important;
   }
   select{
     padding: 2px 6px;
     border-radius: 4px;
   }
-  .border {
+  .sheet-border {
     border-top: 4px double #8c8b8b;
     margin: 16px 0 4px;
     text-align: center;
   }
-  .border:after {
+  .sheet-border:after {
     content: '\002665';
     display: inline-block;
     position: relative;
@@ -106,36 +106,36 @@
     color: #8c8b8b;
     font-size: 18px;
   }
-  .container_title{
+  .sheet-container_title{
     margin: 6px 0;
     font-family: 'GabiaMaeumgyeol';
     font-size: 1.6rem;
     font-weight:bold;
   }
 
-  .container_profile{
+  .sheet-container_profile{
     display: flex;
     flex-direction: column;
     padding-top: 12px;
     gap:6px;
   }
-  .container_profile select{
+  .sheet-container_profile select{
     width: 100%;
     border: 1px solid var(--cus-border);
     background-color: var(--cus-bg);
     border-radius: 4px;
     outline: none;
   }
-  .container_profile .container_hp{
+  .sheet-container_profile .sheet-container_hp{
     display: flex;
     justify-content: space-between;
     margin-top: 4px;
   }
-  .hp_bar{
+  .sheet-hp_bar{
     margin-right: 4px;
   }
 
-  .container_rolldice{
+  .sheet-container_rolldice{
     width: 67%;
     margin: 0 auto 12px;
     display: flex;
@@ -146,18 +146,18 @@
     border:1px solid var(--cus-border);
     border-radius: 8px;
   }
-  .container_rolldice input{
+  .sheet-container_rolldice input{
     width: auto;
   }
 
-  .container_status{
+  .sheet-container_status{
     width:92%;
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
-  .status_circle{
+  .sheet-status_circle{
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -166,7 +166,7 @@
     background-image: url('circle.png');
     background-size:cover;
   }
-  .status_circle p{
+  .sheet-status_circle p{
     display: inline-block;
     border:1px solid black;
     margin-top: 10px;
@@ -174,7 +174,7 @@
     border-radius: 16px;
     background-color: white;
   }
-  .status_circle input{
+  .sheet-status_circle input{
     width: 100%;
     background:none;
     border:0;
@@ -184,7 +184,7 @@
     text-align: center;
   }
 
-  .chk_box_open{
+  .sheet-chk_box_open{
     width:0;
     height: 0;
   }
@@ -204,28 +204,28 @@
     background-color: #ff6738;
     border:1px solid #d66d4e;
   }
-  input[type=checkbox]:checked~.box_hidden{
+  input[type=checkbox]:checked~.sheet-box_hidden{
     margin-top: 6px;
     height: auto;
     visibility: visible;
   }
 
-  .width_full{
+  .sheet-width_full{
     width: 100%;
   }
 
-  .namebar_skill{
+  .sheet-namebar_skill{
     display: flex;
     gap:4px;
   }
-.container_friends{
+.sheet-container_friends{
   width:60%;
 }
-.container_inventory{
+.sheet-container_inventory{
   width:38%;
 
 }
-  .box_friends{
+  .sheet-box_friends{
     padding: 6px;
     display: flex;
     flex-direction: column;
@@ -234,25 +234,25 @@
   border-radius: 8px;
   background-color: #b7c2b1;
   }
-  .row_friends{
+  .sheet-row_friends{
     display: flex;
     gap:4px;
   }
-  .row_friends>*:first-child{
+  .sheet-row_friends>*:first-child{
     width:24px;
   }
-  .row_friends input[type='checkbox']{
+  .sheet-row_friends input[type='checkbox']{
     width: 20px;
     height: 20px;
     margin-top: 6px;
   }
-  .row_friends>*:nth-child(2){
+  .sheet-row_friends>*:nth-child(2){
     flex-grow: 1;
   }
-  .row_friends>*:last-child{
+  .sheet-row_friends>*:last-child{
     width:80px;
   }
-  .box_inventory{
+  .sheet-box_inventory{
     display: flex;
     flex-direction: column;
     gap:4px;
@@ -261,16 +261,16 @@
     border-radius: 8px;
     background-color: #b7c2b1;
   }
-  .row_inventory{
+  .sheet-row_inventory{
     display: flex;
     gap:4px;
   }
-  .row_inventory>*{
+  .sheet-row_inventory>*{
     padding: 0 4px;
   }
-  .row_inventory>*:first-child{
+  .sheet-row_inventory>*:first-child{
     flex-grow: 1;
   }
-  .row_inventory>*:last-child{
+  .sheet-row_inventory>*:last-child{
     width:80px;
   }
