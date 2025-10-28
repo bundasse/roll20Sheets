@@ -26,6 +26,13 @@ textarea{
     padding: 8px 16px;
     background-color: #FFFFFF;
 }
+.col2{
+    display: flex;
+    gap: 8px;
+}
+.col2>div:first-child{
+    flex-grow: 1;
+}
 .inputComp{
     display: flex;
     gap: 8px;
