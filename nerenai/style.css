@@ -33,10 +33,22 @@ textarea{
 .col2>div:first-child{
     flex-grow: 1;
 }
+
+.inputCol2{
+    display: flex;
+    gap: 6px;
+}
+.inputCol2>div{
+    width: 46%;
+}
 .inputComp{
     display: flex;
     gap: 8px;
     align-items: center;
+}
+
+.inputComp>label{
+    width: 100px;
 }
 .inputLongComp{
     display: flex;
