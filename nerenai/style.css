@@ -31,7 +31,7 @@ textarea{
     gap: 8px;
 }
 .col2>div:first-child{
-    flex-grow: 1;
+    width: 70%;
 }
 
 .inputCol2{
